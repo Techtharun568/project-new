@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      button{
+        background-color: black;
+        color: white;
+        border-width: none;
+        padding: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.15s;
+      }
+
+      button:hover{
+        opacity: 0.8;
+      }
+
+      button:active{
+        opacity: 0.5;
+      }
+    </style>
+    
+    <h1>Stone Paper Scissors</h1>
+    <button onclick="
+    const randomNumber = Math.random();
+    
+    if (randomNumber >= 0 && randomNumber <= 1/3) {
+      console.log(alert('Draw!. Computer picks Stone'));
+
+    }else if (randomNumber >= 1/3 && randomNumber <= 2/3) {
+      console.log(alert('You Lose!. Computer Picks Paper'));
+    }else {
+      console.log(alert('You Win!. Computer Picks Scissors'));
+    }
+    ">Stone</button>
+    
+    
+    <button onclick=" const randomNumber2 = Math.random();
+    
+    if (randomNumber2 >= 0 && randomNumber2 <= 1/3) {
+      console.log(alert('You Win!. Computer picks Stone'));
+
+    }else if (randomNumber2 >= 1/3 && randomNumber2 <= 2/3) {
+      console.log(alert('Draw!. Computer Picks Paper'));
+    }else {
+      console.log(alert('You Lose!. Computer Picks Scissors'));
+    }
+    ">Paper</button>
+    
+    
+    <button onclick="
+    const randomNumber3 = Math.random();
+    
+    if (randomNumber3 >= 0 && randomNumber3 <= 1/3) {
+      console.log(alert('You Lose!. Computer picks Stone'));
+
+    }else if (randomNumber3 >= 1/3 && randomNumber3 <= 2/3) {
+      console.log(alert('You Win!. Computer Picks Paper'));
+    }else {
+      console.log(alert('Draw!. Computer Picks Scissors'));
+    }">Scissors</button>
+    
+  </body>
+  </html>
